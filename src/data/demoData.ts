@@ -344,7 +344,14 @@ export const INITIAL_TEACHING_PLAN: TeachingPlanItem[] = [
     objectives: "Học sinh nêu được khái niệm phản ứng thuận nghịch, đặc điểm của trạng thái cân bằng động.",
     activities: "Xem video thí nghiệm N2O4 <-> 2NO2 biến đổi màu sắc theo nhiệt độ. Thảo luận nhóm.",
     status: "Hoàn thành",
-    gradeLevel: 11
+    gradeLevel: 11,
+    attachment: {
+      name: "Giao_An_Bai_1_Can_Bang_Hoa_Hoc_11_CV5512.docx",
+      size: 285400,
+      type: "docx",
+      uploadedAt: "2026-09-02",
+      extractedSummary: "Giáo án Hóa học 11 chuẩn Công văn 5512: Khái niệm phản ứng thuận nghịch, cân bằng động và phiếu học tập."
+    }
   },
   {
     id: "TP-02",
@@ -355,7 +362,14 @@ export const INITIAL_TEACHING_PLAN: TeachingPlanItem[] = [
     objectives: "Viết được biểu thức tính Kc. Phát biểu nguyên lý Le Chatelier (nhiệt độ, nồng độ, áp suất).",
     activities: "Phân tích bảng số liệu thực nghiệm, tính toán Kc trong phản ứng H2 + I2 <-> 2HI.",
     status: "Hoàn thành",
-    gradeLevel: 11
+    gradeLevel: 11,
+    attachment: {
+      name: "Ke_Hoach_Bai_Day_Hang_So_Kc_Nguyen_Ly_Le_Chatelier.docx",
+      size: 312000,
+      type: "docx",
+      uploadedAt: "2026-09-08",
+      extractedSummary: "Kế hoạch bài dạy: Hằng số cân bằng Kc, nguyên lý Le Chatelier và bài tập vận dụng."
+    }
   },
   {
     id: "TP-03",
@@ -377,7 +391,14 @@ export const INITIAL_TEACHING_PLAN: TeachingPlanItem[] = [
     objectives: "Phân biệt chất điện li mạnh và yếu. Khái niệm axit/bazơ theo thuyết trao đổi proton.",
     activities: "Thí nghiệm kiểm tra độ dẫn điện của dung dịch NaCl, axit axetic CH3COOH và đường saccarozơ.",
     status: "Đang thực hiện",
-    gradeLevel: 11
+    gradeLevel: 11,
+    attachment: {
+      name: "Giao_An_Chuyen_De_Can_Bang_Dung_Dich_Nuoc_pH.pdf",
+      size: 428900,
+      type: "pdf",
+      uploadedAt: "2026-09-15",
+      extractedSummary: "Giáo án chuyên đề: Cân bằng trong dung dịch nước, thuyết Axit - Bazơ Bronsted - Lowry và thang pH."
+    }
   },
   {
     id: "TP-05",

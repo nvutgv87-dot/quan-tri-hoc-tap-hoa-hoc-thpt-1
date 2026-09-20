@@ -334,7 +334,13 @@ export default function App() {
       );
       setTeachingPlans(updated);
       StorageService.saveTeachingPlans(updated);
-      addToast('Cập nhật kế hoạch', 'Đã lưu thay đổi kế hoạch bài dạy.', 'success');
+      addToast(
+        'Cập nhật kế hoạch',
+        planData.attachment
+          ? `Đã lưu kế hoạch bài dạy và tệp giáo án "${planData.attachment.name}".`
+          : 'Đã lưu thay đổi kế hoạch bài dạy.',
+        'success'
+      );
     } else {
       const newPlan: TeachingPlanItem = {
         id: planData.id || `TP-${Date.now().toString().slice(-4)}`,
@@ -345,12 +351,19 @@ export default function App() {
         lessonContent: planData.lessonContent || 'Bài dạy mới',
         objectives: planData.objectives || '',
         activities: planData.activities || '',
-        status: planData.status || 'Chưa thực hiện'
+        status: planData.status || 'Chưa thực hiện',
+        attachment: planData.attachment || null
       };
       const updated = [...teachingPlans, newPlan];
       setTeachingPlans(updated);
       StorageService.saveTeachingPlans(updated);
-      addToast('Thêm kế hoạch', 'Đã thêm bài dạy mới vào phân phối chương trình.', 'success');
+      addToast(
+        'Thêm kế hoạch bài dạy',
+        newPlan.attachment
+          ? `Đã thêm bài dạy mới kèm tệp giáo án "${newPlan.attachment.name}".`
+          : 'Đã thêm bài dạy mới vào phân phối chương trình.',
+        'success'
+      );
     }
   };
 
@@ -596,6 +609,7 @@ export default function App() {
               }}
               onRequestDeletePlan={handleDeletePlan}
               onUpdateStatus={handleUpdatePlanStatus}
+              onShowToast={addToast}
             />
           )}
 

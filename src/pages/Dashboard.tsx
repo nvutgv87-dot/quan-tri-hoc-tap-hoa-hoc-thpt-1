@@ -530,9 +530,22 @@ export const Dashboard: React.FC<DashboardProps> = ({
                   </span>
                   <div>
                     <h4 className="text-xs font-bold text-slate-900">{plan.lessonContent}</h4>
-                    <p className="text-[11px] text-slate-500 mt-0.5">
-                      Chủ đề: {plan.topic} • Khối {plan.gradeLevel}
-                    </p>
+                    <div className="flex items-center gap-1.5 flex-wrap mt-0.5">
+                      <p className="text-[11px] text-slate-500">
+                        Chủ đề: {plan.topic} • Khối {plan.gradeLevel}
+                      </p>
+                      {plan.attachment && (
+                        <span
+                          className={`text-[9px] font-extrabold px-1.5 py-0.2 rounded uppercase ${
+                            plan.attachment.type === 'pdf'
+                              ? 'bg-rose-100 text-rose-800'
+                              : 'bg-blue-100 text-blue-800'
+                          }`}
+                        >
+                          {plan.attachment.type === 'pdf' ? 'PDF' : 'WORD'}
+                        </span>
+                      )}
+                    </div>
                   </div>
                 </div>
                 <span

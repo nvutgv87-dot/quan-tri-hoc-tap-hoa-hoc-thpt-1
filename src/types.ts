@@ -118,6 +118,7 @@ export interface TeachingPlanItem {
   status: 'Hoàn thành' | 'Đang thực hiện' | 'Chưa thực hiện';
   gradeLevel: number;
   notes?: string;
+  attachment?: AssignmentAttachment | null; // Tệp kế hoạch bài dạy Word (.docx, .doc) hoặc PDF
 }
 
 export type AttentionTier = 'Mức 1 – Theo dõi' | 'Mức 2 – Cần hỗ trợ' | 'Mức 3 – Ưu tiên hỗ trợ';
