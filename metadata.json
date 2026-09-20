@@ -1,0 +1,7 @@
+{
+  "name": "Quản Trị Học Tập – Hóa Học THPT",
+  "description": "Hệ thống quản trị học tập môn Hóa học THPT dành cho giáo viên Nguyễn Văn Út - Quản lý lớp học, học sinh, điểm số, chuyên cần và giao bài tập kèm tệp đề Word (.docx, .doc) / PDF",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
